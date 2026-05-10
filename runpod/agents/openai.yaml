@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runpod"
+  short_description: "Manage Runpod Pods, Serverless, and docs"
+  default_prompt: "Use $runpod to deploy and troubleshoot a Runpod Serverless worker."
