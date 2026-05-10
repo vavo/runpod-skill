@@ -11,7 +11,7 @@ Use this for Runpod Flash SDK/CLI work: `runpod_flash`, `Endpoint`, `GpuType`, `
 - Configuration Notes
 - Storage
 - Troubleshooting
-- Source Repos
+- Further Reading
 
 ## When To Use Flash
 
@@ -170,10 +170,6 @@ For multi-datacenter endpoints, use one volume per datacenter and do not assume 
 - Unexpected cold starts: inspect image/dependency size, `workers` min value, network volume/model loading, and Python version overhead.
 - Large payloads: pass object-storage URLs or network-volume paths rather than big inline inputs.
 
-## Source Repos
+## Further Reading
 
-- Flash SDK: `https://github.com/runpod/flash`
-- Flash examples: `https://github.com/runpod/flash-examples`
-- Runpod Flash coding-agent skill package: `https://github.com/runpod/skills`
-
-Use source repos for implementation details and examples, but prefer official docs for current user-facing behavior.
+Prefer official Flash docs for normal usage, especially CLI flags, endpoint parameters, and deployment behavior. Use `https://github.com/runpod/flash` only when debugging the SDK package itself or checking release/source behavior. Use `https://github.com/runpod/flash-examples` when the docs are too thin and a working example is more useful than another theory paragraph.

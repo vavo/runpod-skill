@@ -13,20 +13,15 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - Platform overview: `https://docs.runpod.io/overview`
 - API keys: `https://docs.runpod.io/get-started/api-keys`
 - MCP servers: `https://docs.runpod.io/get-started/mcp-servers`
-- Runpod MCP source: `https://github.com/runpod/runpod-mcp`
 - Agent skills for AI coding tools: `https://docs.runpod.io/get-started/agent-skills`
 - REST API overview: `https://docs.runpod.io/api-reference`
 - REST OpenAPI: `https://docs.runpod.io/api-reference/openapi.json`
-- Runpod Python SDK source: `https://github.com/runpod/runpod-python`
 - GraphQL SDK: `https://docs.runpod.io/sdks/graphql/configurations`
 - GraphQL spec: `https://graphql-spec.runpod.io`
 - runpodctl overview: `https://docs.runpod.io/runpodctl/overview`
-- runpodctl source repo: `https://github.com/runpod/runpodctl`
-- runpodctl Homebrew tap: `https://github.com/runpod/homebrew-runpodctl`
 - GPU types: `https://docs.runpod.io/references/gpu-types`
 - CPU types: `https://docs.runpod.io/references/cpu-types`
 - Product updates: `https://docs.runpod.io/release-notes`
-- Runpod assistant support KB: `https://github.com/runpod/runpod-assistant-data/tree/main/knowledge`
 
 ## Serverless
 
@@ -74,11 +69,21 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - Public Endpoint AI coding tools: `https://docs.runpod.io/public-endpoints/ai-coding-tools`
 - Flash overview: `https://docs.runpod.io/flash/overview`
 - Flash quickstart: `https://docs.runpod.io/flash/quickstart`
-- Flash source repo: `https://github.com/runpod/flash`
-- Flash examples: `https://github.com/runpod/flash-examples`
 - Flash CLI: `https://docs.runpod.io/flash/cli/overview`
 - Flash endpoint parameters: `https://docs.runpod.io/flash/configuration/parameters`
 - Flash storage: `https://docs.runpod.io/flash/configuration/storage`
+
+## Source and Debug References
+
+Use these only when debugging a tool/package itself, checking release/source behavior, or when the user explicitly asks about the repo. Do not lead with source repos for normal usage questions.
+
+- Runpod MCP source: `https://github.com/runpod/runpod-mcp`
+- Runpod Python SDK source: `https://github.com/runpod/runpod-python`
+- runpodctl source repo: `https://github.com/runpod/runpodctl`
+- runpodctl Homebrew tap: `https://github.com/runpod/homebrew-runpodctl`
+- Flash source repo: `https://github.com/runpod/flash`
+- Flash examples: `https://github.com/runpod/flash-examples`
+- Runpod assistant support KB: `https://github.com/runpod/runpod-assistant-data/tree/main/knowledge`
 
 ## Search Patterns
 

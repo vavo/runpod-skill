@@ -17,7 +17,8 @@ Use this skill to work against Runpod's current docs and infrastructure patterns
    - REST/GraphQL API via `RUNPOD_API_KEY`, if the user asked for live infrastructure work.
    - Official docs only, if answering or planning.
 4. Refresh docs before relying on exact flags, fields, URLs, payload sizes, GPU names, pricing, or rate limits. Use `python scripts/runpod_docs.py search <terms>` or browse `https://docs.runpod.io/llms.txt`.
-5. Keep secrets out of files and chat. Use environment variables such as `RUNPOD_API_KEY`; never print token values.
+5. Focus on basic usage first: current docs, commands, endpoint calls, SDK examples, and local repo evidence. Open source repos only when debugging the tool/package itself, checking release behavior, or when the user explicitly asks about the repo.
+6. Keep secrets out of files and chat. Use environment variables such as `RUNPOD_API_KEY`; never print token values.
 
 ## Product Routing
 

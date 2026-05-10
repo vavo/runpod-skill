@@ -56,7 +56,7 @@ Keep model loading and heavyweight clients outside the handler so a warm worker 
 
 ## Python SDK Client
 
-The official Python package is `runpod` from `https://github.com/runpod/runpod-python`.
+The official Python package is `runpod`.
 
 Install and configure:
 
@@ -188,7 +188,7 @@ Changes to image, GPU types, env vars, or worker counts can restart workers or a
 
 ## Support KB Notes
 
-The `runpod/runpod-assistant-data` repo contains curated support articles in `knowledge/`. Treat it as a secondary support KB, not a replacement for official docs/API references. Useful topics include:
+Runpod also publishes a support/assistant knowledge base. Treat it as secondary support material, not a replacement for official docs/API references. Useful topics include:
 
 - Builds stuck in `PENDING`: check `https://status.runpod.io`, retry after a reasonable wait, and inspect Dockerfile/image size before assuming user error.
 - Programmatic Pod logs: the support KB says there is no public REST API or SDK method for Pod logs; use console logs, app-level external logging, or write logs to a network volume.

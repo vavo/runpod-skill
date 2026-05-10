@@ -11,7 +11,7 @@ It is built for agents that need to do real Runpod work without pretending yeste
 - Pods, templates, exposed ports, SSH, persistent storage, network volumes, billing/cost guardrails, and `runpodctl` workflows.
 - Flash SDK and CLI workflows, including `runpod_flash`, `Endpoint`, local dev, deployment, app environments, custom containers, and storage.
 - Public Endpoints model APIs for hosted image, video, audio, and text models, with model-page lookup instead of stale hardcoded catalogs.
-- Runpod MCP setup and source-level notes for Codex-compatible infrastructure management.
+- Runpod MCP setup and safe operation notes for Codex-compatible infrastructure management.
 - Python SDK usage for endpoint requests, worker patterns, and API-key handling.
 - REST OpenAPI and GraphQL routing, including the separate GraphQL spec at `https://graphql-spec.runpod.io`.
 - A docs helper script that searches and fetches current Runpod documentation from the official docs index.

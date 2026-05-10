@@ -32,7 +32,7 @@ Runpod documents two MCP servers:
 - API MCP server via `npx -y @runpod/mcp-server@latest`, authenticated with `RUNPOD_API_KEY`.
 - Docs MCP server for documentation search, no API key required.
 
-The API MCP server source is `https://github.com/runpod/runpod-mcp`. It requires Node.js 18 or newer and exposes infrastructure tools for Pods, Serverless endpoints, templates, network volumes, and container registry auths. The npm package is `@runpod/mcp-server`; the package binary is `runpod-mcp`.
+The API MCP server requires Node.js 18 or newer and exposes infrastructure tools for Pods, Serverless endpoints, templates, network volumes, and container registry auths. The npm package is `@runpod/mcp-server`; the package binary is `runpod-mcp`.
 
 For Codex CLI, the documented API MCP setup shape is:
 
@@ -44,17 +44,7 @@ Do not install or reconfigure MCP servers unless the user asks. If missing, give
 
 Treat the API MCP server as a live infrastructure control plane. Its `RUNPOD_API_KEY` can grant broad account access, so prefer a scoped/separate API key when the user's account model supports it, never commit `.mcp.json` with secrets, and list/get resources before mutating them.
 
-If developing or debugging the MCP server itself, use the local-build path from the repo:
-
-```bash
-git clone https://github.com/runpod/runpod-mcp.git
-cd runpod-mcp
-pnpm install
-pnpm build
-node /absolute/path/to/runpod-mcp/dist/index.mjs
-```
-
-The implementation uses REST for authenticated CRUD operations and GraphQL for public read-style infrastructure queries such as GPU types and data centers. Verify current tool names from the installed MCP server before giving exact MCP-tool instructions.
+For normal use, configure MCP and call the installed tools. Only open `https://github.com/runpod/runpod-mcp` when debugging the MCP package itself, checking a release, or changing MCP source code. Verify current tool names from the installed MCP server before giving exact MCP-tool instructions.
 
 ## REST API
 
