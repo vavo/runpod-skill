@@ -1,4 +1,5 @@
 # Runpod Codex Skill
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-vavo-5F7FFF?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/vavo) [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on-GitHub-24292F?style=for-the-badge&logo=github)](https://github.com/sponsors/vavo) [![Support on Patreon](https://img.shields.io/badge/Support%20on-Patreon-FF424D?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/vavo)
 
 The most comprehensive Codex skill set for Runpod yet: one practical skill for working across Serverless, Pods, Flash, Public Endpoints, `runpodctl`, MCP, the Python SDK, REST, GraphQL, storage, deployment, and the small operational traps that usually eat the afternoon.
 
@@ -76,6 +77,7 @@ uv run --with pyyaml python /path/to/skill-creator/scripts/quick_validate.py run
 
 The local build of this skill validated successfully with `quick_validate.py`.
 
-## License
+## 📜 License
+MIT License - go wild, make cool stuff, just don't blame us if your AI starts writing poetry about toast.
 
-MIT is recommended for this repository: simple, permissive, and low-friction for agents, developers, and teams who want to reuse or adapt the skill.
+Made with ❤️ and way too much coffee by vavo
