@@ -49,6 +49,7 @@ runpod/
 │   ├── graphql.md
 │   ├── pods-cli-api.md
 │   ├── public-endpoints.md
+│   ├── runpodctl.md
 │   └── serverless.md
 └── scripts/
     └── runpod_docs.py

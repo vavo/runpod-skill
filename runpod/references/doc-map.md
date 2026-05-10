@@ -21,6 +21,7 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - GraphQL SDK: `https://docs.runpod.io/sdks/graphql/configurations`
 - GraphQL spec: `https://graphql-spec.runpod.io`
 - runpodctl overview: `https://docs.runpod.io/runpodctl/overview`
+- runpodctl source repo: `https://github.com/runpod/runpodctl`
 - runpodctl Homebrew tap: `https://github.com/runpod/homebrew-runpodctl`
 - GPU types: `https://docs.runpod.io/references/gpu-types`
 - CPU types: `https://docs.runpod.io/references/cpu-types`

@@ -1,12 +1,11 @@
 # Runpod Pods, CLI, API, and Storage Reference
 
-Use this for Pods, templates, network volumes, runpodctl, REST/GraphQL API work, and Runpod MCP setup.
+Use this for Pods, templates, network volumes, REST API work, and Runpod MCP setup. For `runpodctl` command usage and CLI repo details, read `runpodctl.md`.
 
 ## Contents
 
 - Tool Preference
 - Runpod MCP
-- runpodctl
 - REST API
 - Pods
 - Templates
@@ -19,7 +18,7 @@ Use this for Pods, templates, network volumes, runpodctl, REST/GraphQL API work,
 Prefer tools in this order:
 
 1. Runpod MCP server, if configured and the user asked for live resource management.
-2. `runpodctl`, if installed and authenticated.
+2. `runpodctl`, if installed and authenticated; read `runpodctl.md` before giving CLI-specific commands.
 3. REST API with `RUNPOD_API_KEY`.
 4. GraphQL only when the task specifically needs GraphQL or existing project code already uses it.
 5. Official docs for planning, review, and dry-run answers.
@@ -56,62 +55,6 @@ node /absolute/path/to/runpod-mcp/dist/index.mjs
 ```
 
 The implementation uses REST for authenticated CRUD operations and GraphQL for public read-style infrastructure queries such as GPU types and data centers. Verify current tool names from the installed MCP server before giving exact MCP-tool instructions.
-
-## runpodctl
-
-Install/configure locally:
-
-```bash
-bash <(curl -sL cli.runpod.io)
-# or on macOS
-brew install runpod/runpodctl/runpodctl
-# or explicitly tap first
-brew tap runpod/runpodctl
-brew install runpodctl
-
-runpodctl doctor
-runpodctl config --apiKey YOUR_API_KEY
-runpodctl version
-```
-
-Every Runpod Pod includes `runpodctl` and a Pod-scoped API key. For local machines, use `runpodctl doctor` for first-time API key and SSH setup. Do not paste real API keys into commands shown back to the user.
-
-The Homebrew tap source is `https://github.com/runpod/homebrew-runpodctl`. Use the official docs for the current preferred install command; use the tap repo only when debugging Homebrew packaging or formula behavior.
-
-Start with:
-
-```bash
-runpodctl doctor
-runpodctl gpu list
-runpodctl datacenter list
-runpodctl pod list
-runpodctl serverless list
-runpodctl template list
-runpodctl network-volume list
-```
-
-Common aliases and areas:
-
-- `runpodctl pod ...` for Pod lifecycle.
-- `runpodctl serverless ...` or `runpodctl sls ...` for Serverless endpoints.
-- `runpodctl template ...` or `runpodctl tpl ...` for template search/create/manage.
-- `runpodctl network-volume ...` or `runpodctl nv ...` for network volumes.
-- `runpodctl registry ...` or `runpodctl reg ...` for private container registry auths.
-- `runpodctl user` or `runpodctl me` for account info and balance.
-- `runpodctl billing ...` for billing history.
-- `runpodctl ssh ...` for SSH key management and connection info.
-- `runpodctl send` and `runpodctl receive` for file transfer.
-- `runpodctl update`, `runpodctl version`, and `runpodctl completion` for CLI maintenance.
-
-Check `runpodctl <area> --help` before relying on flags.
-
-Useful details:
-
-- `runpodctl pod list` shows running Pods by default; use `--all` for exited Pods too.
-- `runpodctl pod get <pod-id>` includes connection details.
-- `runpodctl ssh info <pod-id>` returns an SSH command/key details; it does not open an interactive SSH session.
-- `runpodctl send <file-or-folder> --code <phrase>` and `runpodctl receive <phrase>` transfer files through a shared connection code.
-- `runpodctl completion` is idempotent and updates shell completion config.
 
 ## REST API
 
