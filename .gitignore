@@ -42,6 +42,7 @@ credentials.toml
 
 # Codex / local scratch
 .codex/
+.rcs/
 tmp/
 temp/
 *.log

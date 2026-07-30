@@ -13,7 +13,7 @@ It is built for agents that need to do real Runpod work without pretending yeste
 - Public Endpoints model APIs for hosted image, video, audio, and text models, with model-page lookup instead of stale hardcoded catalogs.
 - Runpod MCP setup and safe operation notes for Codex-compatible infrastructure management.
 - Python SDK usage for endpoint requests, worker patterns, and API-key handling.
-- REST OpenAPI and GraphQL routing, including the separate GraphQL spec at `https://graphql-spec.runpod.io`.
+- REST API v2 resource management (currently beta), API v1 compatibility, and GraphQL routing, including the separate GraphQL spec at `https://graphql-spec.runpod.io`.
 - A docs helper script that searches and fetches current Runpod documentation from the official docs index.
 
 ## Why This Exists
@@ -64,6 +64,7 @@ python runpod/scripts/runpod_docs.py search serverless handler
 python runpod/scripts/runpod_docs.py search public endpoints models
 python runpod/scripts/runpod_docs.py page flash/create-endpoints
 python runpod/scripts/runpod_docs.py openapi --output /tmp/runpod-openapi.json
+# Use --version v1 for the legacy REST schema.
 ```
 
 Less stale magic. Fewer expensive surprises.

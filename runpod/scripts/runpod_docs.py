@@ -5,6 +5,7 @@ Examples:
   python runpod_docs.py search serverless handler
   python runpod_docs.py page serverless/workers/handler-functions
   python runpod_docs.py openapi --output /tmp/runpod-openapi.json
+  python runpod_docs.py openapi --version v1 --output /tmp/runpod-v1-openapi.json
 """
 
 from __future__ import annotations
@@ -20,7 +21,10 @@ from pathlib import Path
 
 DOCS_ROOT = "https://docs.runpod.io"
 LLMS_URL = f"{DOCS_ROOT}/llms.txt"
-OPENAPI_URL = f"{DOCS_ROOT}/api-reference/openapi.json"
+OPENAPI_URLS = {
+    "v1": "https://rest.runpod.io/v1/openapi.json",
+    "v2": "https://api.runpod.io/v2/openapi.json",
+}
 
 
 def fetch(url: str) -> str:
@@ -80,7 +84,7 @@ def command_page(args: argparse.Namespace) -> None:
 
 
 def command_openapi(args: argparse.Namespace) -> None:
-    write_or_print(fetch(OPENAPI_URL), args.output)
+    write_or_print(fetch(OPENAPI_URLS[args.version]), args.output)
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -103,6 +107,7 @@ def build_parser() -> argparse.ArgumentParser:
     page.set_defaults(func=command_page)
 
     openapi = subcommands.add_parser("openapi", help="Fetch the REST OpenAPI JSON")
+    openapi.add_argument("--version", choices=sorted(OPENAPI_URLS), default="v2", help="API version (default: v2)")
     openapi.add_argument("--output", help="Write output to a file")
     openapi.set_defaults(func=command_openapi)
 

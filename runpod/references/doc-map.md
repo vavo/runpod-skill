@@ -14,8 +14,10 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - API keys: `https://docs.runpod.io/get-started/api-keys`
 - MCP servers: `https://docs.runpod.io/get-started/mcp-servers`
 - Agent skills for AI coding tools: `https://docs.runpod.io/get-started/agent-skills`
-- REST API overview: `https://docs.runpod.io/api-reference`
-- REST OpenAPI: `https://docs.runpod.io/api-reference/openapi.json`
+- REST API v2 overview: `https://docs.runpod.io/api-reference-v2/overview`
+- REST API v2 OpenAPI: `https://api.runpod.io/v2/openapi.json`
+- REST API v1 overview: `https://docs.runpod.io/api-reference/overview`
+- REST API v1 OpenAPI: `https://rest.runpod.io/v1/openapi.json`
 - GraphQL SDK: `https://docs.runpod.io/sdks/graphql/configurations`
 - GraphQL spec: `https://graphql-spec.runpod.io`
 - runpodctl overview: `https://docs.runpod.io/runpodctl/overview`

@@ -26,7 +26,8 @@ Use this skill to work against Runpod's current docs and infrastructure patterns
 - Flash SDK/CLI, `runpod_flash`, `@Endpoint`, `flash dev`, `flash deploy`, Flash apps, local-code remote execution, or Flash endpoint configuration: read `references/flash.md`.
 - Public Endpoints, hosted model APIs, model-specific parameters, image/video/audio/text model calls, Vercel AI SDK provider, or Hub playground-generated requests: read `references/public-endpoints.md`.
 - runpodctl command usage, CLI install/config, command groups, shell completion, file transfer, CLI output formats, legacy command migration, the `runpod/runpodctl` repo, or the Homebrew tap: read `references/runpodctl.md`.
-- Pods, SSH, JupyterLab, exposed ports, templates, persistent storage, REST API resource management, MCP setup, or network volumes: read `references/pods-cli-api.md`.
+   - Pods, SSH, JupyterLab, exposed ports, templates, persistent storage, REST API resource management, MCP setup, or network volumes: read `references/pods-cli-api.md`.
+- REST API v2 resource management, beta endpoints, v2 OpenAPI, Pods, Serverless, templates, catalog, billing, or network volumes: read `references/api-v2.md`.
 - GraphQL schema/spec, `https://api.runpod.io/graphql`, `gpuTypes`, `cpuTypes`, Pod GraphQL mutations, or legacy project code using GraphQL: read `references/graphql.md`.
 - Unsure where a topic lives: read `references/doc-map.md`, then fetch the specific official page.
 
@@ -71,8 +72,9 @@ runpodctl template list
 runpodctl network-volume list
 ```
 
-3. For REST calls, use `https://rest.runpod.io/v1/...` with `Authorization: Bearer $RUNPOD_API_KEY`.
-4. For destructive actions, state the target and impact, then proceed only if the user requested that class of action in this turn.
+3. For current REST resource management, prefer API v2 at `https://api.runpod.io/v2/...` with `Authorization: Bearer $RUNPOD_API_KEY`; read `references/api-v2.md` first because v2 is beta.
+4. Use `https://rest.runpod.io/v1/...` only when the task specifically targets the API v1 surface documented in `references/pods-cli-api.md`.
+5. For destructive actions, state the target and impact, then proceed only if the user requested that class of action in this turn.
 
 ## Docs Helper
 
