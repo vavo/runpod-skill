@@ -24,5 +24,5 @@ jobs:
       - name: Validate Markdown links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --exclude-mail README.md runpod/**/*.md
+          args: --no-progress README.md runpod/**/*.md
           fail: true
