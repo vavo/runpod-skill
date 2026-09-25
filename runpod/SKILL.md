@@ -27,7 +27,7 @@ Use this skill to work against Runpod's current docs and infrastructure patterns
 - Public Endpoints, hosted model APIs, model-specific parameters, image/video/audio/text model calls, Vercel AI SDK provider, or Hub playground-generated requests: read `references/public-endpoints.md`.
 - runpodctl command usage, CLI install/config, command groups, shell completion, file transfer, CLI output formats, legacy command migration, the `runpod/runpodctl` repo, or the Homebrew tap: read `references/runpodctl.md`.
    - Pods, SSH, JupyterLab, exposed ports, templates, persistent storage, REST API resource management, MCP setup, or network volumes: read `references/pods-cli-api.md`.
-- REST API v2 resource management, beta endpoints, v2 OpenAPI, Pods, Serverless, templates, catalog, billing, or network volumes: read `references/api-v2.md`.
+- REST API v2 resource management, account resources, Clusters, v2 OpenAPI, Pods, Serverless, templates, catalog, billing, or network volumes: read `references/api-v2.md`.
 - GraphQL schema/spec, `https://api.runpod.io/graphql`, `gpuTypes`, `cpuTypes`, Pod GraphQL mutations, or legacy project code using GraphQL: read `references/graphql.md`.
 - Unsure where a topic lives: read `references/doc-map.md`, then fetch the specific official page.
 
@@ -72,7 +72,7 @@ runpodctl template list
 runpodctl network-volume list
 ```
 
-3. For current REST resource management, prefer API v2 at `https://api.runpod.io/v2/...` with `Authorization: Bearer $RUNPOD_API_KEY`; read `references/api-v2.md` first because v2 is beta.
+3. For current REST resource management, prefer API v2 at `https://api.runpod.io/v2/...` with `Authorization: Bearer $RUNPOD_API_KEY`; read `references/api-v2.md` first.
 4. Use `https://rest.runpod.io/v1/...` only when the task specifically targets the API v1 surface documented in `references/pods-cli-api.md`.
 5. For destructive actions, state the target and impact, then proceed only if the user requested that class of action in this turn.
 
@@ -81,9 +81,9 @@ runpodctl network-volume list
 Use the bundled helper to search and fetch official docs without loading the entire site into context:
 
 ```bash
-python /Users/vavo/.codex/skills/runpod/scripts/runpod_docs.py search serverless handler
-python /Users/vavo/.codex/skills/runpod/scripts/runpod_docs.py page serverless/workers/handler-functions
-python /Users/vavo/.codex/skills/runpod/scripts/runpod_docs.py openapi --output /tmp/runpod-openapi.json
+python "${CODEX_HOME:-$HOME/.codex}/skills/runpod/scripts/runpod_docs.py" search serverless handler
+python "${CODEX_HOME:-$HOME/.codex}/skills/runpod/scripts/runpod_docs.py" page serverless/workers/handler-functions
+python "${CODEX_HOME:-$HOME/.codex}/skills/runpod/scripts/runpod_docs.py" openapi --output /tmp/runpod-openapi.json
 ```
 
 The docs index is `https://docs.runpod.io/llms.txt`. Treat it as the routing table for the docs.

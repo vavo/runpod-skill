@@ -15,6 +15,7 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - MCP servers: `https://docs.runpod.io/get-started/mcp-servers`
 - Agent skills for AI coding tools: `https://docs.runpod.io/get-started/agent-skills`
 - REST API v2 overview: `https://docs.runpod.io/api-reference-v2/overview`
+- REST API v2 migration guide: `https://docs.runpod.io/api-reference-v2/migrate-from-v1`
 - REST API v2 OpenAPI: `https://api.runpod.io/v2/openapi.json`
 - REST API v1 overview: `https://docs.runpod.io/api-reference/overview`
 - REST API v1 OpenAPI: `https://rest.runpod.io/v1/openapi.json`
@@ -24,6 +25,7 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - GPU types: `https://docs.runpod.io/references/gpu-types`
 - CPU types: `https://docs.runpod.io/references/cpu-types`
 - Product updates: `https://docs.runpod.io/release-notes`
+- Agent setup: `https://docs.runpod.io/agent-setup`
 
 ## Serverless
 
@@ -59,6 +61,7 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - Template secrets: `https://docs.runpod.io/pods/templates/secrets`
 - Storage options: `https://docs.runpod.io/pods/storage/types`
 - Network volumes: `https://docs.runpod.io/storage/network-volumes`
+- Instant Clusters: `https://docs.runpod.io/instant-clusters`
 - S3-compatible volume API: `https://docs.runpod.io/storage/s3-api`
 
 ## Public Endpoints and Flash
@@ -66,8 +69,8 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - Public Endpoints overview: `https://docs.runpod.io/public-endpoints/overview`
 - Public Endpoints quickstart: `https://docs.runpod.io/public-endpoints/quickstart`
 - Public Endpoint requests: `https://docs.runpod.io/public-endpoints/requests`
-- Public Endpoint models: `https://docs.runpod.io/public-endpoints/models/`
-- Public Endpoint Vercel AI SDK: `https://docs.runpod.io/public-endpoints/vercel-ai-sdk`
+- Public Endpoint models: `https://docs.runpod.io/public-endpoints/reference`
+- Public Endpoint Vercel AI SDK: `https://docs.runpod.io/public-endpoints/ai-sdk`
 - Public Endpoint AI coding tools: `https://docs.runpod.io/public-endpoints/ai-coding-tools`
 - Flash overview: `https://docs.runpod.io/flash/overview`
 - Flash quickstart: `https://docs.runpod.io/flash/quickstart`

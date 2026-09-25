@@ -29,7 +29,7 @@ Use custom Serverless or Flash instead when the user needs custom model weights,
 The model catalog starts at:
 
 ```text
-https://docs.runpod.io/public-endpoints/models/
+https://docs.runpod.io/public-endpoints/reference
 ```
 
 The root model URL currently redirects to a model page; use the left navigation or `llms.txt` to find the exact model page. Do not hardcode a static model list into the skill because the catalog changes frequently. Current categories include image, video, text, and audio models.

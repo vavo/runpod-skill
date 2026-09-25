@@ -53,7 +53,7 @@ Base URL:
 ```text
 https://rest.runpod.io/v1
 
-For current REST resource management, prefer API v2. See `api-v2.md` for the beta surface and current operation links.
+For current REST resource management, prefer API v2. See `api-v2.md` for current operation links.
 ```
 
 Authentication:
