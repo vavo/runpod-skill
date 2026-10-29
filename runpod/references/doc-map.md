@@ -11,11 +11,18 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 ## Main Areas
 
 - Platform overview: `https://docs.runpod.io/overview`
-- API keys: `https://docs.runpod.io/get-started/api-keys`
+- Credentials: `https://docs.runpod.io/get-started/credentials`
 - MCP servers: `https://docs.runpod.io/get-started/mcp-servers`
 - Agent skills for AI coding tools: `https://docs.runpod.io/get-started/agent-skills`
+- Runpod SDK overview: `https://docs.runpod.io/sdk/overview`
+- Runpod SDK quickstart: `https://docs.runpod.io/sdk/quickstart`
+- Runpod SDK resource parameters: `https://docs.runpod.io/sdk/configuration/parameters`
+- Runpod SDK app deployment: `https://docs.runpod.io/sdk/apps/deploy`
+- Runpod SDK runtime: `https://docs.runpod.io/sdk/runtime`
+- Runpod SDK Flash migration: `https://docs.runpod.io/sdk/migrate-from-flash`
 - REST API v2 overview: `https://docs.runpod.io/api-reference-v2/overview`
 - REST API v2 migration guide: `https://docs.runpod.io/api-reference-v2/migrate-from-v1`
+- REST API v2 rate limits: `https://docs.runpod.io/api-reference-v2/rate-limits`
 - REST API v2 OpenAPI: `https://api.runpod.io/v2/openapi.json`
 - REST API v1 overview: `https://docs.runpod.io/api-reference/overview`
 - REST API v1 OpenAPI: `https://rest.runpod.io/v1/openapi.json`
@@ -61,6 +68,7 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - Template secrets: `https://docs.runpod.io/pods/templates/secrets`
 - Storage options: `https://docs.runpod.io/pods/storage/types`
 - Network volumes: `https://docs.runpod.io/storage/network-volumes`
+- Global volumes: `https://docs.runpod.io/storage/globalvolume/overview`
 - Instant Clusters: `https://docs.runpod.io/instant-clusters`
 - S3-compatible volume API: `https://docs.runpod.io/storage/s3-api`
 
@@ -77,6 +85,7 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - Flash CLI: `https://docs.runpod.io/flash/cli/overview`
 - Flash endpoint parameters: `https://docs.runpod.io/flash/configuration/parameters`
 - Flash storage: `https://docs.runpod.io/flash/configuration/storage`
+- Flash to Runpod SDK migration: `https://docs.runpod.io/sdk/migrate-from-flash`
 
 ## Source and Debug References
 

@@ -37,8 +37,8 @@ The root model URL currently redirects to a model page; use the left navigation 
 Fetch current model pages before giving exact endpoint IDs, parameter names, allowed ranges, prices, or output schemas:
 
 ```bash
-python /Users/vavo/.codex/skills/runpod/scripts/runpod_docs.py search public endpoints models
-python /Users/vavo/.codex/skills/runpod/scripts/runpod_docs.py search flux dev
+python "${CODEX_HOME:-$HOME/.codex}/skills/runpod/scripts/runpod_docs.py" search public endpoints models
+python "${CODEX_HOME:-$HOME/.codex}/skills/runpod/scripts/runpod_docs.py" search flux dev
 ```
 
 ## Request Patterns

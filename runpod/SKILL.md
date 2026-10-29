@@ -1,6 +1,6 @@
 ---
 name: runpod
-description: Work with Runpod GPU infrastructure and documentation. Use when Codex needs to create, deploy, manage, debug, or review Runpod Pods, Serverless workers/endpoints, templates, network volumes, Public Endpoints, Flash apps, runpodctl commands, Runpod Python SDK usage, REST/GraphQL API usage, Runpod MCP setup, Docker images for Runpod, endpoint request payloads, logs, billing/cost checks, or Runpod deployment troubleshooting.
+description: Work with Runpod GPU infrastructure and documentation. Use when Codex needs to create, deploy, manage, debug, or review Runpod Pods, Serverless workers/endpoints, templates, network volumes, Public Endpoints, Runpod SDK apps, legacy Flash apps, runpodctl commands, Runpod Python SDK usage, REST/GraphQL API usage, Runpod MCP setup, Docker images for Runpod, endpoint request payloads, logs, billing/cost checks, or Runpod deployment troubleshooting.
 ---
 
 # Runpod
@@ -9,7 +9,7 @@ Use this skill to work against Runpod's current docs and infrastructure patterns
 
 ## First Pass
 
-1. Identify the target product: Serverless, Pods, Flash, Public Endpoints, network volumes, templates, runpodctl, REST API, GraphQL, MCP, or billing.
+1. Identify the target product: Serverless, Pods, Runpod SDK, legacy Flash, Public Endpoints, network volumes, templates, runpodctl, REST API, GraphQL, MCP, or billing.
 2. Check whether the request is read-only or mutating. Do not create, start, stop, delete, resize, or redeploy live Runpod resources unless the user explicitly asked for that action.
 3. Discover available tools in this order:
    - Runpod MCP tools, if installed in the current environment.
@@ -24,9 +24,10 @@ Use this skill to work against Runpod's current docs and infrastructure patterns
 
 - Serverless worker code, handlers, endpoint jobs, `/run`, `/runsync`, `/status`, streaming, Dockerfiles, cold starts, model caching, vLLM, or queue/load-balancing behavior: read `references/serverless.md`.
 - Flash SDK/CLI, `runpod_flash`, `@Endpoint`, `flash dev`, `flash deploy`, Flash apps, local-code remote execution, or Flash endpoint configuration: read `references/flash.md`.
+- Runpod SDK beta, `rp` CLI, remote functions, GPU functions, SDK endpoints, runtime behavior, or Flash migration: read `references/sdk.md`.
 - Public Endpoints, hosted model APIs, model-specific parameters, image/video/audio/text model calls, Vercel AI SDK provider, or Hub playground-generated requests: read `references/public-endpoints.md`.
 - runpodctl command usage, CLI install/config, command groups, shell completion, file transfer, CLI output formats, legacy command migration, the `runpod/runpodctl` repo, or the Homebrew tap: read `references/runpodctl.md`.
-   - Pods, SSH, JupyterLab, exposed ports, templates, persistent storage, REST API resource management, MCP setup, or network volumes: read `references/pods-cli-api.md`.
+- Pods, SSH, JupyterLab, exposed ports, templates, persistent storage, REST API resource management, MCP setup, or network volumes: read `references/pods-cli-api.md`.
 - REST API v2 resource management, account resources, Clusters, v2 OpenAPI, Pods, Serverless, templates, catalog, billing, or network volumes: read `references/api-v2.md`.
 - GraphQL schema/spec, `https://api.runpod.io/graphql`, `gpuTypes`, `cpuTypes`, Pod GraphQL mutations, or legacy project code using GraphQL: read `references/graphql.md`.
 - Unsure where a topic lives: read `references/doc-map.md`, then fetch the specific official page.

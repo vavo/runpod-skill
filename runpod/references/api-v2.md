@@ -6,6 +6,7 @@ Use this for current REST resource management. Refresh the official docs before 
 
 - Overview: `https://docs.runpod.io/api-reference-v2/overview`
 - Migration guide: `https://docs.runpod.io/api-reference-v2/migrate-from-v1`
+- Rate limits: `https://docs.runpod.io/api-reference-v2/rate-limits`
 - Documentation index: `https://docs.runpod.io/llms.txt`
 - OpenAPI schema: `https://api.runpod.io/v2/openapi.json`
 
@@ -29,7 +30,7 @@ Do not put API keys in URLs, source files, committed config, or shell examples.
 
 ## Resource groups
 
-API v2 currently documents account SSH keys and secrets, Pods, Instant Clusters, Serverless endpoints and builds, Templates, Network Volumes, Container Registry credentials and ECR delegations, catalog resources, public templates, and billing history.
+API v2 currently documents organization resources, account SSH keys and secrets, Pods, Instant Clusters, Serverless endpoints and builds, Templates, Network Volumes and Global Volumes, Container Registry credentials and ECR delegations, catalog resources, public templates, audit logs, billing history, and rate limits.
 
 Prefer the generated OpenAPI schema and the linked operation pages for request and response details. Resource paths and fields may change as Runpod evolves the API.
 
@@ -40,6 +41,8 @@ Prefer the generated OpenAPI schema and the linked operation pages for request a
 3. Confirm the requested mutation and its impact.
 4. Use the smallest request body that expresses the change.
 5. Record the operation and returned status, with secrets redacted.
+
+Respect the documented API v2 rate limits and use backoff for retries. Do not turn transient throttling into a retry storm.
 
 ## Important v1 differences
 

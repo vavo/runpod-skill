@@ -9,7 +9,8 @@ It is built for agents that need to do real Runpod work without pretending yeste
 
 - Serverless workers, handlers, endpoint jobs, local testing, Docker packaging, cold starts, logs, model caching, vLLM, and worker fitness checks.
 - Pods, templates, exposed ports, SSH, persistent storage, network volumes, billing/cost guardrails, and `runpodctl` workflows.
-- Flash SDK and CLI workflows, including `runpod_flash`, `Endpoint`, local dev, deployment, app environments, custom containers, and storage.
+- Runpod SDK beta workflows for remote GPU functions, app deployment, the `rp` CLI, and runtime behavior, plus migration guidance from legacy Flash.
+- Legacy Flash SDK and CLI workflows, including `runpod_flash`, `Endpoint`, local dev, deployment, app environments, custom containers, and storage.
 - Public Endpoints model APIs for hosted image, video, audio, and text models, with model-page lookup instead of stale hardcoded catalogs.
 - Runpod MCP setup and safe operation notes for Codex-compatible infrastructure management.
 - Python SDK usage for endpoint requests, worker patterns, and API-key handling.
@@ -50,6 +51,7 @@ runpod/
 │   ├── pods-cli-api.md
 │   ├── public-endpoints.md
 │   ├── runpodctl.md
+│   ├── sdk.md
 │   └── serverless.md
 └── scripts/
     └── runpod_docs.py
