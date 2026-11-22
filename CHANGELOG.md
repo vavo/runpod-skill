@@ -2,6 +2,7 @@
 
 ## 2026-11-22
 
+- Rewrote the README installation and first-use instructions for beginners.
 - Corrected template-dependent `runpodctl` availability, current Pod-log guidance, Flash status, and legacy API labels.
 - Added generally available Batch Inference guidance for Serverless workloads.
 - Updated API v2 guidance for the retired v1 API and upcoming GraphQL retirement.

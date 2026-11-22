@@ -21,22 +21,43 @@ It is built for agents that need to do real Runpod work without pretending yeste
 
 Runpod has a lot of useful surface area, and most agent guidance covers only one slice: a handler example here, a CLI command there, maybe a Dockerfile if the stars are feeling generous. This skill ties the pieces together so Codex can choose the right tool, refresh the right docs, avoid stale assumptions, and keep live infrastructure changes deliberate.
 
-## Install
+## Start Here
 
-Copy the `runpod` skill folder into your Codex skills directory:
+This repository is a set of instructions for Codex. It is not a Python package, and you do not run `runpod` as a terminal command.
+
+### 1. Download the skill
+
+If you have not downloaded this repository yet:
 
 ```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-rsync -a runpod/ "${CODEX_HOME:-$HOME/.codex}/skills/runpod/"
+git clone https://github.com/vavo/runpod-skill.git
+cd runpod-skill
 ```
 
-Then invoke it explicitly:
+If you already have the repository open, just continue from its folder.
+
+### 2. Install it for Codex
+
+Run this from the repository folder:
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills/runpod"
+rsync -a --exclude '__pycache__/' runpod/ "${CODEX_HOME:-$HOME/.codex}/skills/runpod/"
+```
+
+This copies the skill into Codex's local skills folder. It does not create a Runpod account, start a Pod, or use an API key.
+
+### 3. Use it in Codex
+
+Start a new Codex chat, then begin your message with `$runpod` and describe what you want help with. For example:
 
 ```text
-$runpod deploy and troubleshoot this Serverless worker
-$runpod check this Dockerfile before I push it to Runpod
-$runpod use Public Endpoints to call the current Flux Dev model
+$runpod help me choose between a Pod and Serverless for this project
+$runpod check this Dockerfile before I deploy it to Runpod
+$runpod help me call a current Public Endpoint
 ```
+
+You can ask questions first. The skill will identify the right Runpod product and current documentation before suggesting commands or making changes.
 
 ## Repository Layout
 
