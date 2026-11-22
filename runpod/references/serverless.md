@@ -21,6 +21,7 @@ Use this for Runpod Serverless workers, endpoints, job requests, Docker packagin
 - Worker: container instance that runs the handler or custom HTTP service.
 - Queue-based endpoint: uses `/run`, `/runsync`, `/status`, `/stream`, `/cancel`, `/retry`, `/purge-queue`, and `/health`.
 - Load-balancing endpoint: routes direct HTTP traffic to custom routes exposed by the worker, usually FastAPI/Flask/vLLM style.
+- Batch Inference: submits a large collection of requests to a Serverless endpoint for asynchronous processing without maintaining a client-side queue.
 - Cold start: time from request arrival to a ready worker. Image size, model download, volume locality, and initialization all matter.
 
 ## Handler Patterns
@@ -170,6 +171,12 @@ curl --request GET \
 
 Use `/runsync` for short work; use `/run` and polling for long jobs. Check the current docs for payload limits, retention, wait parameters, and rate limits before giving exact numbers.
 
+## Batch Inference
+
+Batch Inference is generally available for workloads that can wait, such as dataset scoring, embedding backfills, and overnight processing. Use the official batch-job API to create a named batch, add requests, finalize it, and poll aggregate and per-request progress.
+
+Do not treat batch work as latency-sensitive traffic. Read the current [Batch jobs documentation](https://docs.runpod.io/serverless/batch-jobs) before quoting request caps, discounts, or completion guarantees.
+
 ## Endpoint Configuration
 
 Verify current fields before creating or updating endpoints. Common concerns include:
@@ -191,7 +198,7 @@ Changes to image, GPU types, env vars, or worker counts can restart workers or a
 Runpod also publishes a support/assistant knowledge base. Treat it as secondary support material, not a replacement for official docs/API references. Useful topics include:
 
 - Builds stuck in `PENDING`: check `https://status.runpod.io`, retry after a reasonable wait, and inspect Dockerfile/image size before assuming user error.
-- Programmatic Pod logs: the support KB says there is no public REST API or SDK method for Pod logs; use console logs, app-level external logging, or write logs to a network volume.
+- Pod logs: API v2 exposes a documented Pod log streaming endpoint; prefer the current API v2 reference over the legacy support-KB guidance that treated console logs as the only programmatic option.
 - Driver/CUDA and Blackwell: verify current driver/CUDA compatibility and image recommendations before advising on RTX 5090/B200/Blackwell issues.
 - Temporary image URLs: generated image URLs may expire; production apps should download outputs or move them to owned storage.
 - Serverless WebSocket pattern: long-lived bidirectional traffic can use exposed TCP ports and worker-reported `RUNPOD_PUBLIC_IP` / `RUNPOD_TCP_PORT_<port>` details, but this is a specialized pattern that should be checked against current examples before implementation.

@@ -1,6 +1,6 @@
 # Runpod GraphQL Reference
 
-Use this when a task specifically needs Runpod GraphQL schema details, legacy code already uses GraphQL, or the requested data is easier to fetch from GraphQL than REST/runpodctl/MCP.
+Use this only for migration or maintenance of existing Runpod GraphQL integrations. GraphQL is being retired in January 2027; prefer REST API v2, runpodctl, or MCP for new work.
 
 ## Contents
 
@@ -26,7 +26,7 @@ Authorization: Bearer <RUNPOD_API_KEY>
 Content-Type: application/json
 ```
 
-The spec lists common queries, mutations, and types for Pods and related infrastructure. It currently advertises version `1.1.0`; do not assume that remains current.
+The spec lists common queries, mutations, and types for Pods and related infrastructure. Treat it as a legacy reference and verify current compatibility before using it.
 
 ## When To Use GraphQL
 

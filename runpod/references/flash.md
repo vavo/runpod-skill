@@ -1,10 +1,10 @@
 # Runpod Flash Reference
 
-Use this for Runpod Flash SDK/CLI work: `runpod_flash`, `Endpoint`, `GpuType`, `GpuGroup`, `CpuInstanceType`, `NetworkVolume`, `flash dev`, `flash deploy`, and Flash apps.
+Use this only for maintaining or migrating existing standalone Flash projects. Standalone Flash is legacy and no longer receives fixes or updates; use the current Runpod SDK for new projects and see `references/sdk.md` first.
 
 ## Contents
 
-- When To Use Flash
+- When Maintaining Flash
 - Setup
 - CLI Workflow
 - Endpoint Patterns
@@ -13,9 +13,9 @@ Use this for Runpod Flash SDK/CLI work: `runpod_flash`, `Endpoint`, `GpuType`, `
 - Troubleshooting
 - Further Reading
 
-## When To Use Flash
+## When Maintaining Flash
 
-Use Flash when the user wants to define hardware, dependencies, and remote execution from local Python code instead of writing a raw Serverless handler, Dockerfile, template, and endpoint config by hand. Flash provisions Runpod Serverless workers and routes calls from local code to remote GPU/CPU execution.
+Use this reference when the user needs to maintain or migrate an existing Flash project that defines hardware, dependencies, and remote execution from local Python code.
 
 Use raw Serverless instead when the project already has a custom worker image, a hand-written handler lifecycle, tight Docker control, non-Python runtime needs, or production infra that should not be hidden behind Flash abstractions.
 

@@ -24,8 +24,8 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - REST API v2 migration guide: `https://docs.runpod.io/api-reference-v2/migrate-from-v1`
 - REST API v2 rate limits: `https://docs.runpod.io/api-reference-v2/rate-limits`
 - REST API v2 OpenAPI: `https://api.runpod.io/v2/openapi.json`
-- REST API v1 overview: `https://docs.runpod.io/api-reference/overview`
-- REST API v1 OpenAPI: `https://rest.runpod.io/v1/openapi.json`
+- Retired REST API v1 overview: `https://docs.runpod.io/api-reference/overview`
+- Retired REST API v1 OpenAPI: `https://rest.runpod.io/v1/openapi.json`
 - GraphQL SDK: `https://docs.runpod.io/sdks/graphql/configurations`
 - GraphQL spec: `https://graphql-spec.runpod.io`
 - runpodctl overview: `https://docs.runpod.io/runpodctl/overview`
@@ -47,6 +47,7 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - GitHub integration: `https://docs.runpod.io/serverless/workers/github-integration`
 - Local testing: `https://docs.runpod.io/serverless/development/local-testing`
 - Logs: `https://docs.runpod.io/serverless/development/logs`
+- Batch Inference: `https://docs.runpod.io/serverless/batch-jobs`
 - Optimization: `https://docs.runpod.io/serverless/development/optimization`
 - Endpoint settings: `https://docs.runpod.io/serverless/endpoints/endpoint-configurations`
 - Send requests: `https://docs.runpod.io/serverless/endpoints/send-requests`
@@ -86,6 +87,8 @@ Use the index before opening random pages. Runpod changes product names, endpoin
 - Flash endpoint parameters: `https://docs.runpod.io/flash/configuration/parameters`
 - Flash storage: `https://docs.runpod.io/flash/configuration/storage`
 - Flash to Runpod SDK migration: `https://docs.runpod.io/sdk/migrate-from-flash`
+- Terraform provider 2.0: `https://docs.runpod.io/integrations/terraform/overview`
+- Terraform provider migration: `https://docs.runpod.io/integrations/terraform/migration`
 
 ## Source and Debug References
 

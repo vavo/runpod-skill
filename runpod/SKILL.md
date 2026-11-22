@@ -74,7 +74,7 @@ runpodctl network-volume list
 ```
 
 3. For current REST resource management, prefer API v2 at `https://api.runpod.io/v2/...` with `Authorization: Bearer $RUNPOD_API_KEY`; read `references/api-v2.md` first.
-4. Use `https://rest.runpod.io/v1/...` only when the task specifically targets the API v1 surface documented in `references/pods-cli-api.md`.
+4. Use the v1 references only when migrating or diagnosing a legacy integration; REST API v1 was retired on November 15, 2026.
 5. For destructive actions, state the target and impact, then proceed only if the user requested that class of action in this turn.
 
 ## Docs Helper

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-22
+
+- Corrected template-dependent `runpodctl` availability, current Pod-log guidance, Flash status, and legacy API labels.
+- Added generally available Batch Inference guidance for Serverless workloads.
+- Updated API v2 guidance for the retired v1 API and upcoming GraphQL retirement.
+- Added current Terraform provider 2.0 references and expanded v2 resource coverage.
+
 ## 2026-10-29
 
 - Added current Runpod SDK beta routing and Flash migration guidance.

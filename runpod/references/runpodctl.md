@@ -47,7 +47,7 @@ runpodctl config --apiKey YOUR_API_KEY
 runpodctl version
 ```
 
-Every Runpod Pod includes `runpodctl` and a Pod-scoped API key. For local machines, use `runpodctl doctor` for first-time API key and SSH setup. Do not paste real API keys into commands shown back to the user.
+Some Runpod Pod templates include `runpodctl` and a Pod-scoped API key, but availability is template-dependent. Official templates commonly include it, and some community templates do too. Verify with `command -v runpodctl`; for local machines, use `runpodctl doctor` for first-time API key and SSH setup. Do not paste real API keys into commands shown back to the user.
 
 ## Command Usage
 

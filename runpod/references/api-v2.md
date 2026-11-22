@@ -30,7 +30,7 @@ Do not put API keys in URLs, source files, committed config, or shell examples.
 
 ## Resource groups
 
-API v2 currently documents organization resources, account SSH keys and secrets, Pods, Instant Clusters, Serverless endpoints and builds, Templates, Network Volumes and Global Volumes, Container Registry credentials and ECR delegations, catalog resources, public templates, audit logs, billing history, and rate limits.
+API v2 currently documents organization resources, account SSH keys and secrets, Pods, Instant Clusters, Serverless endpoints and builds, Templates, Network Volumes and Global Volumes, Container Registry credentials and ECR delegations, catalog resources, public templates, tags, audit logs, account balance, billing history, and rate limits.
 
 Prefer the generated OpenAPI schema and the linked operation pages for request and response details. Resource paths and fields may change as Runpod evolves the API.
 
@@ -46,7 +46,8 @@ Respect the documented API v2 rate limits and use backoff for retries. Do not tu
 
 ## Important v1 differences
 
-- v1 is deprecated and is scheduled for retirement on November 15, 2026. Migrate existing integrations before that date.
+- REST API v1 was retired on November 15, 2026. Existing integrations must use v2.
+- GraphQL is also being retired in January 2027. Migrate legacy GraphQL integrations to REST API v2 where the v2 surface covers the resource.
 - Resource paths move to the v2 base URL. Examples include `/v2/serverless`, `/v2/network-volumes`, and `/v2/clusters`.
 - Pod lifecycle operations use `POST /v2/pods/{id}/action` with `{"action":"start|stop|restart|terminate"}`. The v1 `reset` action has no v2 equivalent.
 - List responses are wrapped by resource name, such as `{"pods":[...]}` and `{"networkVolumes":[...]}`, instead of returning a bare array.

@@ -46,7 +46,9 @@ Treat the API MCP server as a live infrastructure control plane. Its `RUNPOD_API
 
 For normal use, configure MCP and call the installed tools. Only open `https://github.com/runpod/runpod-mcp` when debugging the MCP package itself, checking a release, or changing MCP source code. Verify current tool names from the installed MCP server before giving exact MCP-tool instructions.
 
-## REST API
+## REST API v1 (legacy)
+
+This section is retained for migration and diagnosis only. REST API v1 was retired on November 15, 2026. Use `references/api-v2.md` for current REST API work.
 
 Base URL:
 
